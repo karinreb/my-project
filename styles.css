@@ -80,25 +80,25 @@ body {
 
 
 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background-image: url(./img/header_title.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
+.title_information {
+  padding-top: 177px;
+}
 .img {
     text-align: center;
-    padding-top: 187px;
+    padding-bottom: 34px;
 }
-
 .title_text-exp {
-    padding-top: 34px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
+    padding-bottom: 34px;
     font-size: 48px;
     line-height: 53px;
     /* or 110% */
@@ -106,12 +106,6 @@ body {
     color: #FFFFFF;
 }
 .location {
-    padding-top: 34px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
     /* identical to box height, or 143% */
     text-align: center;
     letter-spacing: 2px;
@@ -123,13 +117,26 @@ body {
     text-align: center;
 }
 
-.line_icon {
+.house_inf {
     padding-top: 100px;
-    text-align: center;
-    padding-bottom: 33px;
+}
+
+.rectangle {
+    margin-right: auto;
+    margin-left: auto;
+    width: 42px;
+    height: 8px;
+    background: #E08631;
+    
+}
+
+.house_inf {
+    background: #FAF8F0;
+    padding-bottom:100px ;
 }
 .house_inf-text {
     display: flex;
+    padding-top: 33px;
 }
 
 .house_inf_main {
@@ -152,9 +159,6 @@ body {
 
 }
 .house_inf_add-p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 13px;
     line-height: 20px;
     /* or 154% */
@@ -186,6 +190,10 @@ body {
     opacity: 0.9;
 }
 
+.guest_house_title {
+    padding-top: 100px;
+}
+
 h1 {
     padding-top: 32px;
     font-family: 'Montserrat';
@@ -199,12 +207,20 @@ h1 {
 
 }
 
+
 .guest_house_kitchen {
     padding-top: 72px;
     text-align: center;
 }
 
+.sleep {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #FAF8F0;
+}
+
 .sleeping {
+    padding-top: 30px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -221,9 +237,6 @@ h1 {
     width: 554px;
 }
 .sleep_add {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     /* or 150% */
@@ -330,20 +343,27 @@ h1 {
     color: #52503B;
 }
 .perfect_escape {
-    padding-left: 136px;
-}
-.line_icon_escape {
-    width: 42px;
-    height: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 100px;
 }
+
+.triangle-left {
+    width: 42px;
+    height: 8px;
+    background: #E08631;
+}
+
+
+.perfect_escape_content {
+align-self: flex-start;
+}
+
 
 .perfect_escape_main {
     padding-top: 30px;
     padding-bottom: 14px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 32px;
     line-height: 36px;
     /* identical to box height, or 112% */
@@ -351,10 +371,6 @@ h1 {
 }
 
 .perfect_escape_add {
-    width: 554px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     /* or 150% */
@@ -367,13 +383,14 @@ h1 {
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
-
 .features_icons {
     padding-right: 32px;
-    width:568px;
     display: flex;
 }
+
 .featuresIcon {
     width: 36px;
     padding-bottom: 49px;
@@ -381,37 +398,38 @@ h1 {
 
 .icon_title {
     padding-left: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    /* identical to box height, or 143% */
     color: #52503B;
 }
 
 .icon_main_inf {
     padding-left: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    /* identical to box height, or 143% */
     color: #333333;
 }
 
+
 .past_guests {
     /* overflow-x: scroll; */
-    width: 1440px;
+    /* width: 1440px; */
     /* height: 682px; */
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    padding-top: 100px;
     background: #FAF8F0;
+    margin: 0 auto;
+}
+.past_guests_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.past_guests_title {
+    padding: 30px 0 30px 0;
 }
 
 .past_guests_main {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 32px;
     line-height: 36px;
     /* identical to box height, or 112% */
@@ -422,10 +440,6 @@ h1 {
 .past_guests_inf {
     padding-top: 14px;
     width: 572px;
-    margin: 0 auto;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     /* or 150% */
@@ -435,18 +449,29 @@ h1 {
 
 .past_guests_review {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1208px;
 }
 
 .first_review {
-    margin-left: 136px;
-    margin-top: 30px;
-    margin-bottom: 140px;
-    width:584px;
+    /* margin-top: 30px; */
+    /* margin-bottom: 140px; */
+    /* width:584px; */
     background: #FFFFFF;
     border: 1px solid rgba(82, 80, 59, 0.1);
     border-radius: 4px;
+    /* display: flex;
+    flex-direction: column;
+    align-content: center; */
 }
-
+.first_review_title {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 47px;
+}
 .review_stars {
     display: inline-flex;
     margin-right: 2px;
@@ -456,11 +481,6 @@ h1 {
 }
 
 .amazing_stay {
-    padding-left: 31px;
-    margin-bottom: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     /* identical to box height, or 133% */
@@ -468,12 +488,9 @@ h1 {
 }
 
 .review_inf {
-    width: 506px;
-    padding-left: 31px;
-    padding-right: 47px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
+    /* width: 506px; */
+    /* padding-left: 31px;
+    padding-right: 47px; */
     font-size: 14px;
     line-height: 20px;
     /* or 143% */
@@ -482,20 +499,21 @@ h1 {
 }
 
 .second_review {
-    margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 140px;
-    width: 584px;
+    /* margin-left: 20px; */
+    /* margin-top: 30px; */
+    /* width: 584px; */
     background: #FFFFFF;
     border: 1px solid rgba(82, 80, 59, 0.1);
     border-radius: 4px;
 }
-
-.review_two {
+.second_review_title {
+    display: flex;
+    flex-direction: column;
     padding-left: 31px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
+    padding-right: 47px;
+}
+.review_two {
+    /* padding-left: 31px; */
     font-size: 18px;
     line-height: 24px;
     /* identical to box height, or 133% */
@@ -503,12 +521,9 @@ h1 {
 
 }
 
-.second_review_inf p {
-    padding-top: 10px;
-    padding-left: 31px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
+.second_review_inf {
+    /* padding-top: 10px;
+    padding-left: 31px; */
     font-size: 14px;
     line-height: 20px;
     /* or 154% */
@@ -516,32 +531,34 @@ h1 {
 }
 
 .third_review {
-    margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 140px;
-    width: 584px;
+    /* margin-left: 20px; */
+    /* margin-top: 30px; */
+    /* margin-bottom: 140px; */
+    /* width: 584px; */
     background: #FFFFFF;
     border: 1px solid rgba(82, 80, 59, 0.1);
     border-radius: 4px;
+
 }
 
-.third_review_title p {
+.third_review_title {
+    display: flex;
+    flex-direction: column;
     padding-left: 31px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    /* identical to box height, or 133% */
-    color: #333333;
+    padding-right: 47px;
 }
 
-.third_review_main p {
-    padding-top: 10px;
-    padding-left: 31px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
+.third_title {
+       /* padding-left: 31px; */
+       font-size: 18px;
+       line-height: 24px;
+       /* identical to box height, or 133% */
+       color: #333333;
+}
+
+.third_review_main {
+    /* padding-top: 10px;
+    padding-left: 31px; */
     font-size: 14px;
     line-height: 20px;
     /* or 143% */
@@ -550,6 +567,7 @@ h1 {
 
 .user_name {
     display: flex;
+    padding-bottom: 30px;
 }
 
 .vertical_line {
@@ -560,40 +578,30 @@ h1 {
 .user_david {
     padding-top: 19px;
     padding-left: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
     color: #333333;
 }
-.bedroom_img p {
-    text-align: center;
-    height: 600px;
+.bedroom_img_block {
+    padding-top: 70px;
 }
 
 .come_together {
-    display: flex;
+    width: 100%;
     background: #FFFFFF;
+    padding-top: 70px;
 }
-.come_together_first {
-    margin-right: 64px;
+.come_together_wrapper {
+    max-width: 1208px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
-.come_together_first:last-child {
-    margin-right: 0 ;
-}
-.come_together_line {
-    padding-left: 136px;
-}
 
 .come_together_title {
-    padding-left: 136px;
     padding-top: 30px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 32px;
     line-height: 36px;
     /* identical to box height, or 112% */
@@ -601,12 +609,7 @@ h1 {
 }
 
 .come_together_main {
-    width: 552px;
     padding-top: 14px;
-    padding-left: 136px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     /* or 150% */
@@ -614,24 +617,23 @@ h1 {
 }
 .come_together_second {
     display: flex;
+    gap: 37px;
+    padding-top: 100px;
 }
 .come_together_icons {
     display: flex;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
-.wi_fi_icon {
-    padding-top: 100px;
+.come_together_column {
     padding-left: 64px;
 }
+
 
 .wi_fi_text {
     width: 250px;
-    padding-top: 101px;
+    /* padding-top: 101px; */
     padding-left: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* or 143% */
@@ -639,50 +641,27 @@ h1 {
 
 }
 
-.cheese {
-    padding-left: 64px;
-}
 .cheese_inf {
     width: 191px;
     padding-left: 19px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* or 143% */
     color: #333333;
 }
 
-.bread {
-    padding-left: 37px;
-}
 .bread_inf {
     width: 220px;
     padding-left: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* or 143% */
     color: #333333;
-}
-.come_together_column2 {
-    padding-left: 32px;
-    padding-top: 101px;
-}
-
-.fork {
-    padding-left: 35px;
 }
 
 .knife_inf {
     width: 198px;
     padding-left: 19px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* or 143% */
@@ -690,17 +669,22 @@ h1 {
 }
 
 .contacts {
-    padding-bottom: 100px;
+    padding: 100px 0 100px 0;
     background: #FAF8F0;
 }
 
-.contact_title {
+.contacts_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
+}
+
+.contact_title {
+    padding-top: 30px;
     padding-bottom: 14px;
     width: 553px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 32px;
     line-height: 36px;
     /* or 112% */
@@ -711,11 +695,7 @@ h1 {
 
 .contact_text {
     padding-bottom: 18px;
-    margin: 0 auto;
     width: 514px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     /* or 150% */
@@ -725,22 +705,15 @@ h1 {
 
 .contact_buttons {
     display: flex;
-    justify-content: center;
+    gap: 20px;
 }
 
 
 .contact_one_btn {
-    /* margin-right: 20px;
     width: 116px;
-    height: 52px; */
+    height: 52px;
     border: 4px solid #52503B;
     border-radius: 6px;
-}
-
-.contact_one p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     /* identical to box height, or 125% */  
@@ -748,20 +721,11 @@ h1 {
     color: #52503B;
 
 }
-
-
 .contact_two_btn {
-    width: 133px;
     background: #52503B;
     border-radius: 6px;
     border-style: none;
-}
-
-.contact_two p {
     padding: 16px 26px 16px 26px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     /* identical to box height, or 125% */
@@ -769,27 +733,27 @@ h1 {
     color: #FFFFFF;
 }
 
+
 .footer {
     background: #52503B;
 }
 
-.footer_main_inf {
+.footer_content {
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .footer_links {
     display: flex;
-    justify-content: space-between;
 }
+
 .footer_pages {
     width: 260px;
-    padding-left: 136px;
-    margin-right: 16px;
 }
 .footer_pages p {
     padding-bottom: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
@@ -801,9 +765,6 @@ h1 {
 .footer_pages li {
     padding-bottom: 10px;
     list-style: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
@@ -816,9 +777,6 @@ h1 {
 }
 .footer_media_title p {
     padding-bottom: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
@@ -829,24 +787,21 @@ h1 {
 
 .footer_media_icons {
     display: flex;
+    gap: 20px;
 }
 
 .footer_media_icons p {
-    margin-right: 20px;
     width: 32px;
 }
 
 .footer_input {
     width: 576px;
-    padding-right: 136px;
-    margin-left: 16px;
+    /* padding-right: 136px; */
+    /* margin-left: 16px; */
 }
 
 .footer_input_title {
     padding-bottom: 1px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
@@ -858,16 +813,13 @@ h1 {
 .footer_input_text {
     width: 563px;
     padding-bottom: 9px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* or 143% */
     color: #FFFFFF;
 }
 .input_field {
-    display: flex;
+    display: inline-block;
     position: relative;
 }
 input {
@@ -882,9 +834,6 @@ textarea:focus, input:focus {outline: none;}
 
 input::placeholder {
     padding-left: 30px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
@@ -896,17 +845,12 @@ input::placeholder {
     margin-bottom: 11px;
     margin-right: 7px;
     border: none;
+    padding: 5px;
     top: 0;
-    bottom: 0;
     right: 0;
     position: absolute;
-    /* width: 61px; */
     background: #52503B;
     border-radius: 10px;
-}
-
-.input_btn p {
-    padding: 5px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -914,7 +858,6 @@ input::placeholder {
     line-height: 20px;
     /* identical to box height, or 143% */
     color: #FFFFFF;
-
 }
 
 .footer_guest_icon {
@@ -925,9 +868,6 @@ input::placeholder {
 
 .footer_copyright p {
     padding-bottom: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
@@ -936,9 +876,6 @@ input::placeholder {
 }
 
 .footer_contacts p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
